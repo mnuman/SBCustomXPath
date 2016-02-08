@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xpf:xpathFunctions xmlns:xpf="http://www.bea.com/wli/sb/xpath/config">
     <xpf:category id="Qualogy Custom Functions">
         <xpf:function>
@@ -6,7 +6,7 @@
             <xpf:comment>Perform Base-64 encoding on the input string, e.g. base64encode($input as xs:string) as xs:string</xpf:comment>
             <xpf:namespaceURI>http://www.qualogy.com/soa/xpath</xpf:namespaceURI>
             <xpf:className>com.qualogy.soa.xpath.Base64</xpf:className>
-            <xpf:method>java.lang.String encode(java.lang.String)</xpf:method>
+            <xpf:method>java.lang.String encodeBase64(java.lang.String)</xpf:method>
             <xpf:isDeterministic>false</xpf:isDeterministic>
             <xpf:scope>Pipeline</xpf:scope>
             <xpf:scope>SplitJoin</xpf:scope>
@@ -16,11 +16,10 @@
             <xpf:comment>Perform Base-64 decoding on the input string, e.g. base64decode($input as xs:string) as xs:string</xpf:comment>
             <xpf:namespaceURI>http://www.qualogy.com/soa/xpath</xpf:namespaceURI>
             <xpf:className>com.qualogy.soa.xpath.Base64</xpf:className>
-            <xpf:method>java.lang.String decode(java.lang.String)</xpf:method>
+            <xpf:method>java.lang.String decodeBase64(java.lang.String)</xpf:method>
             <xpf:isDeterministic>false</xpf:isDeterministic>
             <xpf:scope>Pipeline</xpf:scope>
             <xpf:scope>SplitJoin</xpf:scope>
         </xpf:function>
     </xpf:category>
 </xpf:xpathFunctions>
-    

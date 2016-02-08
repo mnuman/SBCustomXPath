@@ -24,6 +24,8 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="JavaXPath/JavaXPath.jpr"/></hash>
+      <hash><url n="URL" path="ServiceBusCustomXPathInXQuery/ServiceBusCustomXPathInXQuery.jpr"/></hash>
+      <hash><url n="URL" path="ServiceBusCustomXPathInXSLT/ServiceBusCustomXPathInXSLT.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
@@ -42,6 +44,6 @@
       </hash>
    </hash>
    <hash n="oracle.sb.tooling.ide.core.internal.application.SbApplication">
-      <value n="configContextSessionName" v="OSB-IDE_build_1454790534503"/>
+      <value n="configContextSessionName" v="OSB-IDE_build_1454948041128"/>
    </hash>
 </jws:workspace>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mn="http://xmlns.qualogy.com/blog/mnuman/xpath/custom"
+            targetNamespace="http://xmlns.qualogy.com/blog/mnuman/xpath/custom" elementFormDefault="qualified">
+  <xsd:element name="CustomXPathRequest">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="StringToEncode" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CustomXPathResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="StringToEncode" type="xsd:string"/>
+        <xsd:element name="EncodedString" type="xsd:string"/>
+        <xsd:element name="RoundTrip" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -65,28 +65,39 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
       <string v="oracle.jdeveloper.model.PathsConfiguration/cepContentSet"/>
    </list>
-   <value n="defaultPackage" v="com.qualogy.soa.xpath"/>
+   <value n="defaultPackage" v="servicebuscustomxpathinxquery"/>
+   <hash n="oracle.adfdtinternal.model.ide.settings.ADFMSettings">
+      <hash n="adfmContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/adfmsrc/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/model/"/>
+         </list>
+      </hash>
+   </hash>
    <hash n="oracle.ide.model.ResourcePaths">
       <hash n="resourcesContentSet">
-         <list n="constituent-sets">
-            <hash>
-               <list n="url-path">
-                  <url path="dist/"/>
-               </list>
-            </hash>
-         </list>
-         <list n="pattern-filters">
-            <string v="+*"/>
-         </list>
+         <list n="pattern-filters"/>
          <list n="url-path">
-            <url path="."/>
+            <url path=".data/contentsets/"/>
          </list>
       </hash>
    </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
-         <string v="Java"/>
+         <string v="Maven"/>
+         <string v="ServiceBusTechnology"/>
+         <string v="WSDL"/>
+         <string v="WSPolicy"/>
          <string v="XML"/>
+         <string v="XML_SCHEMA"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
@@ -95,80 +106,92 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="buildJar">
-            <hash n="archiveOptions">
-               <value n="hasManifest" v="false"/>
-            </hash>
-            <hash n="fileGroups">
-               <list n="groups">
-                  <hash>
-                     <list n="contributors">
-                        <hash>
-                           <value n="type" v="2"/>
-                        </hash>
-                        <hash>
-                           <value n="type" v="7"/>
-                        </hash>
-                     </list>
-                     <value n="displayName" v="Project Output"/>
-                     <hash n="filters">
-                        <list n="rules">
-                           <hash>
-                              <value n="pattern" v="dist/"/>
-                              <value n="type" v="1"/>
-                           </hash>
-                           <hash>
-                              <value n="pattern" v="**"/>
-                              <value n="type" v="0"/>
-                           </hash>
-                        </list>
-                     </hash>
-                     <value n="internalName" v="project-output"/>
-                     <value n="type" v="1"/>
-                  </hash>
-               </list>
-            </hash>
-            <url n="jarURL" path="dist/customBase64.jar"/>
-            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
-            <value n="profileName" v="buildJar"/>
+         <hash n="SBCustomXPath_ServiceBusCustomXPathInXQuery_ServiceBusProjectProfile">
+            <value n="profileClass" v="SbProjectDeployProfile"/>
+            <value n="profileName" v="SBCustomXPath_ServiceBusCustomXPathInXQuery_ServiceBusProjectProfile"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="buildJar"/>
+         <string v="SBCustomXPath_ServiceBusCustomXPathInXQuery_ServiceBusProjectProfile"/>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="SBCustomXPath-JavaXPath-webapp"/>
-      <value n="j2eeWebContextRoot" v="SBCustomXPath-JavaXPath-context-root"/>
-   </hash>
-   <hash n="oracle.jdevimpl.config.JProjectLibraries">
-      <list n="exportedReferences">
-         <hash>
-            <value n="id" v="Fabric-runtime.jar"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-      </list>
-      <hash n="internalDefinitions">
-         <list n="libraryDefinitions">
-            <hash>
-               <list n="classPath">
-                  <url path="../../../Software/FMW12.1.3/soa/soa/modules/oracle.soa.fabric_11.1.1/fabric-runtime.jar" jar-entry=""/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Fabric-runtime.jar"/>
-               <value n="id" v="Fabric-runtime.jar"/>
-               <value n="locked" v="true"/>
-            </hash>
+      <value n="j2eeWebAppName" v="SBCustomXPath-ServiceBusCustomXPathInXQuery-webapp"/>
+      <value n="j2eeWebContextRoot" v="SBCustomXPath-ServiceBusCustomXPathInXQuery-context-root"/>
+      <hash n="webContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/public_html/"/>
          </list>
       </hash>
-      <list n="libraryReferences">
-         <hash>
-            <value n="id" v="Fabric-runtime.jar"/>
-            <value n="isJDK" v="false"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="cepContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/META-INF/"/>
+         </list>
+      </hash>
+      <hash n="javaContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/database/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+            <hash n="oracle.jdevimpl.runner.debug.DebugConfiguration">
+               <value n="promptForRemoteDebugging" v="false"/>
+               <value n="remoteProtocol" v="OSB"/>
+            </hash>
+            <url n="targetURL" path="servicebus.sboverview"/>
          </hash>
-      </list>
+      </hash>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
-      <url n="outputDirectory" path="classes/"/>
+      <url n="outputDirectory" path=".data/contentsets/classes/"/>
+   </hash>
+   <hash n="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider">
+      <hash n="mdsContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/libraryCustomizations/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.sb.tooling.ide.core.projects.SbProjectSettings">
+      <hash n="sbContentSet">
+         <list n="pattern-filters">
+            <string v="-.data"/>
+            <string v="-.settings"/>
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.toplink.workbench.addin">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters"/>
+         <list n="url-path">
+            <url path=".data/contentsets/toplink/"/>
+         </list>
+      </hash>
    </hash>
 </jpr:project>
